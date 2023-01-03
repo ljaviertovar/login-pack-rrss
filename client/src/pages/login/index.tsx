@@ -1,7 +1,8 @@
 import { Card, Spacer, Button, Text, Container } from '@nextui-org/react';
 import { IconGitHub, IconLinkedIn } from '../../assets/icons';
+import { useEffect } from 'react';
 
-const CLIENT_ID = 'f0014edb612054c056ff';
+const CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID;
 
 const Login = () => {
   const loginToGithub = () => {
@@ -10,6 +11,8 @@ const Login = () => {
       `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`,
     );
   };
+
+  useEffect(() => {}, []);
 
   return (
     <Container

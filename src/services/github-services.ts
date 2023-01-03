@@ -1,7 +1,7 @@
+import * as dotenv from 'dotenv';
 import axios from 'axios';
 
-const CLIENT_ID = 'f0014edb612054c056ff';
-const CLIENT_SECRET = '0e4f21edfbea7aa57cc7dd2877c405b93168212c';
+dotenv.config();
 
 type AccessTokenData = {
   access_token: string;
@@ -13,7 +13,7 @@ export const getAccessToken = async (
   code: string,
 ): Promise<AccessTokenData> => {
   try {
-    const params = `?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&code=${code}`;
+    const params = `?client_id=${process.env.GITHUB_CLIENT_ID}&client_secret=${process.env.GITHUB_CLIENT_SECRET}&code=${code}`;
 
     const { data } = await axios.post(
       `https://github.com/login/oauth/access_token${params}`,
