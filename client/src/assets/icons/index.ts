@@ -1,5 +1,5 @@
-import IconGitHub from './Github';
-import IconLinkedIn from './Linkedin';
-import LogOutIcon from './Logout';
+import IconGitHub from "./Github"
+import IconGoogle from "./Google"
+import LogOutIcon from "./Logout"
 
-export { IconGitHub, IconLinkedIn, LogOutIcon };
+export { IconGitHub, IconGoogle, LogOutIcon }

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 import { Card, Spacer, Button, Text, Container } from "@nextui-org/react"
 
-import { IconGitHub } from "../../assets/icons"
+import { IconGitHub, IconGoogle } from "../../assets/icons"
 
 const GITHUB_CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID
 
@@ -45,7 +45,7 @@ const Login = () => {
 				<Spacer y={1} />
 
 				<Button color='gradient' auto ghost onClick={() => loginToGoogle()}>
-					<IconGitHub />
+					<IconGoogle />
 					<Spacer x={0.5} />
 					Google
 				</Button>
