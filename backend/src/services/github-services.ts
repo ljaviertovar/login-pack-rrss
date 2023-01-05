@@ -24,7 +24,6 @@ export const getAccessToken = async (
         },
       },
     );
-    console.log(data);
 
     return data;
   } catch (error) {
@@ -40,7 +39,7 @@ export const getUserData = async (accessToken: string) => {
         Authorization: `Bearer ${accessToken}`,
       },
     });
-    console.log({ data });
+
     return data;
   } catch (error) {
     return null;
