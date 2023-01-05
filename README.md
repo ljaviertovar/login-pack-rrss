@@ -1,4 +1,4 @@
-# 📑 Login pack with RRSS
+# 👤 Login pack with RRSS
 
 Login app whit GitHub and Google
 
