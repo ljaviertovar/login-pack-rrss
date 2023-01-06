@@ -8,7 +8,6 @@ specifiers:
   '@types/react-dom': ^18.0.9
   '@vitejs/plugin-react': ^3.0.0
   axios: ^1.2.2
-  jwt-decode: ^3.1.2
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.6.1
@@ -20,7 +19,6 @@ dependencies:
   '@octokit/auth': 3.0.3
   '@react-oauth/google': 0.5.1_biqbaboplfbrettd7655fr4n2y
   axios: 1.2.2
-  jwt-decode: 3.1.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.6.1_biqbaboplfbrettd7655fr4n2y
@@ -1879,10 +1877,6 @@ packages:
     dependencies:
       jwa: 1.4.1
       safe-buffer: 5.2.1
-    dev: false
-
-  /jwt-decode/3.1.2:
-    resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
     dev: false
 
   /lodash.includes/4.3.0:
