@@ -4,7 +4,7 @@ import cors from 'cors';
 import githubRoutes from './routes/github-routes';
 import googleRoutes from './routes/google-routes';
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
