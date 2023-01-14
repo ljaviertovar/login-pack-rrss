@@ -1,5 +1,5 @@
 import express, { Request, Response, Router } from 'express';
-import * as googleServices from '../services/google-services';
+import * as googleServices from '../controllers/google-controller';
 
 const router: Router = express.Router();
 
